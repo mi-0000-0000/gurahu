@@ -37,7 +37,7 @@ function calculate() {
   }
   const ctx = document.getElementById('myChart').getContext('2d');
   chart = new Chart(ctx, {
-    type: 'bar',
+    type: 'line',
     data: {
       labels: labels,
       datasets: [{
