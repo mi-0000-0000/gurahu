@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>金額合計＋グラフ表示ツール</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>金額合計＋グラフ表示</h1>
+    <div id="inputs">
+      <div class="input-group"><span>1日目:</span><input type="number" min="0" value="0"></div>
+      <div class="input-group"><span>2日目:</span><input type="number" min="0" value="0"></div>
+      <div class="input-group"><span>3日目:</span><input type="number" min="0" value="0"></div>
+    </div>
+    <button onclick="addDay()">＋日を追加</button>
+    <button onclick="calculate()">合計を計算する＋グラフ表示</button>
+
+    <div class="result" id="result"></div>
+
+    <div id="chartContainer">
+      <canvas id="myChart"></canvas>
+    </div>
+  </div>
+
+  <!-- Chart.jsの読み込み -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- 自作スクリプト読み込み -->
+  <script src="script.js"></script>
+</body>
+</html>
