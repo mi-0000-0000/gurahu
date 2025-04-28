@@ -10,7 +10,7 @@ function addDay() {
   const inputsDiv = document.getElementById('inputs');
   const newInput = document.createElement('div');
   newInput.className = 'input-group';
-  newInput.innerHTML = `<span>${currentDay}日目:</span><input type="number" min="0" value="0">`;
+  newInput.innerHTML = `<span>${currentDay}日目:</span><input type="number" min="0">`;
   inputsDiv.appendChild(newInput);
 }
 
